@@ -76,7 +76,6 @@ Engine::Engine() :
       sprites.push_back(new SmartSprite("Fly", pos, i, 0));
       sprites[i+1]->setScale(3); 
       subjectSprite->attach(dynamic_cast<SmartSprite*>(sprites[i+1]));
-
     }
   }
   sprites.push_back(new honeySprite("HoneyComb"));
@@ -217,14 +216,12 @@ void Engine::switchSprite(){
 
 bool Engine::play() {
 
-
   SDLSound sound;
   SDL_Event event;
   const Uint8* keystate;
   bool done = false;
   Uint32 ticks = clock.getElapsedTicks();
   FrameGenerator frameGen;
-
 
   while ( !done ) {
 
@@ -340,7 +337,6 @@ bool Engine::play() {
         subjectSprite->stop();
       }
   }
-
 
     // In this section of the event loop we allow key bounce:
     ticks = clock.getElapsedTicks();

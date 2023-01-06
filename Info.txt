@@ -1,0 +1,55 @@
+This file is to help remind myself, and maybe other readers, how things work.
+
+If I were to update this project more I would thoroughly document the various classes and how they interact 
+and maybe make some diagrams as well.
+
+
+Drawable
+  Base class for all drawn objects. 
+  Fields for common data such as location, name.
+  virtual functions draw() and update() must be implemented
+  Sprite and MultiSprite implement Drawable 
+What does Engine do:
+ It is the game/event loop. It also contains containers for the sprites and objects that are in the game.
+GameData and XML?
+  GameData is a class that has game constants and numeric values.
+  It can read from the XML allowing users to change certain aspects of the game.
+FrameGenerator 
+  just makes bmp images (this was used to help record videos)
+World class
+  A wrapper around an Image that serves as the background. World tracks where the sprite is with ViewPort so we can scroll.
+ViewPort
+  Viewport tracks the player and attempts to keep the image center
+SpriteSheet
+  Functions to extract surfaces/images from a sprite sheet (for movement etc)
+Image Class:
+  Wrapper around SDL Surface and Texture. Conversion constructor accepts a surface and uses it to create a texture.
+Image Factory
+  Builds an image to to pass to the Image Class. It creates the image once and keeps a reference of the image to return on 
+  re-use of the image.
+IoMod - SDL helper class
+  singleton that renders things
+  writes text
+  gets a SDL surface/texture from an image
+RenderContext:
+  Initializes a window and render with the SDL framework.
+
+Bee - how is it visually created?
+
+Instantiated -> imageFactory -> getImages("name") > readSurface from file using ioMod 
+-> get the image with gamedata which has file and size in xml
+
+draw()-> gets its images (at frame) -> shown through Image.Draw()(wrapper around sdl image)
+
+How do we move?
+
+play() -> sdl poll event in loop -> playerSprite->right() -> Beesprite->setVeloicty
+every game loop call draw() which calls draw on all objects
+draw() draws the bee at the new location
+
+
+
+
+
+
+
