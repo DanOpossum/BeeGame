@@ -1,0 +1,285 @@
+<?xml version = "1.0"?>
+<GameData>
+<title>The Tracker Framework</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<maxFrames>300</maxFrames>
+<username>djobrie</username>
+
+<view>
+  <width>1920</width>
+  <height>900</height>
+  <loc x="30" y="30"/>
+</view>
+
+<world>
+  <width>3000</width>
+  <height>1080</height>
+</world>
+
+<back>
+  <file>assets/bigstarrysky.png</file>
+  <factor>1</factor>
+  <transparency>false</transparency>
+</back>
+
+<clouds>
+  <file>assets/back1v2.png</file>
+  <factor>2</factor>
+  <transparency>false</transparency>
+</clouds>
+
+<trees>
+  <file>assets/back2v2.png</file>
+  <factor>1</factor>
+  <transparency>false</transparency>
+</trees>
+
+
+<font name="font">
+  <file>fonts/arial.ttf</file>
+  <size>30</size>
+  <red>200</red>
+  <green>0</green>
+  <blue>0</blue>
+  <alpha>0</alpha>
+</font>
+
+<SpinningStar>
+  <file>assets/stars.png</file>
+  <startLoc x="50" y="140"/>
+  <frames>4</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>200</speedX>
+  <speedY>200</speedY>
+  <transparency>true</transparency>
+</SpinningStar>
+
+<BackgroundBee>
+  <file>assets/beesprite2.png</file>
+  <startLoc x="50" y="650"/>
+  <frames>12</frames>
+  <frameInterval>30</frameInterval>
+  <speedX>400</speedX>
+  <speedY>0</speedY>
+  <transparency>true</transparency>
+  <chunk>
+    <size>10</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</BackgroundBee>
+
+<Bee>
+  <file>assets/superBee.png</file>
+  <startLoc x="50" y="140"/>
+  <frames>24</frames>
+  <frameInterval>30</frameInterval>
+  <speedX>1100</speedX>
+  <speedY>900</speedY>
+  <transparency>true</transparency>
+  <bulletName>beeBullet</bulletName>
+  <chunk>
+    <size>10</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</Bee>
+
+<beeBullet>
+  <file>assets/stinger.png</file>
+  <poolSize>6</poolSize>
+  <startLoc x="227" y="0"/>
+  <speed x="50" y="0"/>
+  <speedX>30000</speedX>
+  <speedY>0</speedY>
+  <interval>100</interval>
+  <distance>750</distance>
+  <scale>10</scale>
+  <transparency>false</transparency>
+</beeBullet>
+
+<Fly>
+  <file>assets/flysprite.png</file>
+  <startLoc x="227" y="240"/>
+  <frames>4</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>650</speedX>
+  <speedY>150</speedY>
+  <transparency>false</transparency>
+  <safeDistance>450</safeDistance>
+  <chunk>
+    <size>6</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</Fly>
+
+<Fly2>
+  <file>assets/flysheet2.png</file>
+  <startLoc x="227" y="240"/>
+  <frames>4</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>200</speedX>
+  <speedY>300</speedY>
+  <transparency>false</transparency>
+  <safeDistance>1200</safeDistance>
+  <chunk>
+    <size>10</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</Fly2>
+
+<Fly3>
+  <file>assets/flysheet3.png</file>
+  <startLoc x="227" y="240"/>
+  <frames>4</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>350</speedX>
+  <speedY>200</speedY>
+  <transparency>false</transparency>
+  <safeDistance>900</safeDistance>
+  <chunk>
+    <size>10</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</Fly3>
+
+<Fly4>
+  <file>assets/flysheet4.png</file>
+  <startLoc x="227" y="240"/>
+  <frames>4</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>777</speedX>
+  <speedY>400</speedY>
+  <transparency>false</transparency>
+  <safeDistance>500</safeDistance>
+  <chunk>
+    <size>10</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</Fly4>
+
+<numberOfFlys>20</numberOfFlys>
+
+<YellowStar>
+  <file>assets/yellowstar32.png</file>
+  <startLoc x="500" y="500"/>
+  <speedX>0</speedX>
+  <safeDistance>750</safeDistance>
+  <speedY>0</speedY>
+  <transparency>false</transparency>
+  <chunk>
+    <size>20</size>
+    <distance>200</distance>
+    <scale>10</scale>
+  </chunk>
+</YellowStar>
+
+<HoneyComb>
+  <file>assets/honeyComb.png</file>
+  <startLoc x="1900" y="200"/>
+  <speedX>0</speedX>
+  <safeDistance>750</safeDistance>
+  <speedY>0</speedY>
+  <transparency>false</transparency>
+  <chunk>
+    <size>9</size>
+    <distance>200</distance>
+    <scale>30</scale>
+  </chunk>
+</HoneyComb>
+
+
+<Hud>
+  <startLoc x="30" y="70"/>
+  <increment>10</increment>
+  <interval>1500</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+  <barColor>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+    <a>255</a>
+  </barColor>
+</Hud>
+
+<HUD>
+  <startLoc x="10" y="10"/>
+  <width>500</width>
+  <height>500</height>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>150</a>
+  </backColor>
+</HUD>
+
+<WinHUD>
+  <startLoc x="650" y="280"/>
+  <width>550</width>
+  <height>60</height>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>255</a>
+  </backColor>
+</WinHUD>
+
+
+
+<MoveIndicator>
+  <startLoc x="30" y="140"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <width>115</width>
+  <height>90</height>
+  <Color>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+    <a>255</a>
+  </Color>
+  <backColor>
+    <r>0</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+</MoveIndicator>
+
+
+<FPS>
+  <startLoc x="10" y="5"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+</FPS>
+
+<Instructions>
+  <startLoc x="10" y="300"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+</Instructions>
+
+</GameData>

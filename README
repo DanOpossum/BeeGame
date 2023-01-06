@@ -1,0 +1,14 @@
+To run the program, cd into the /tracker/ directory and use the command:"make" then "./run"
+
+Project description:
+
+This was a project designed to learn more about c++ and modern c++. 
+It was used to learn game design from the ground up, rather than using extensive tools like Unity or Unreal, this project was used to learn how a game engine might work.
+
+Dr. Brian Malloy of Clemson University taught game engine and c++ concepts and gave pointers and feedback through the development of this project.
+
+All assets were designed by me except the song Flight of the Bumblebee, that was Rimsky-Korsakov.
+
+Game:
+  Bee vs flies
+  The objective of the Bee is to defeat all the flies before the flies defeat the bee.
